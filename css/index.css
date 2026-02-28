@@ -1,0 +1,89 @@
+@import url('./britney.css');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*header element styling*/
+.website-header {
+    display: flex;
+    height: 20vh;
+    background: linear-gradient(
+    135deg,
+    #0f0f0f 0%,
+    #1c1c2e 40%,
+    #2a0845 100%
+    );
+
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+    color: white;
+    overflow: hidden;
+    font-family: 'Britney-Bold', sans-serif
+}
+.website-header h1 {
+    font-size: 2.5rem;
+}
+
+.watchlist-btn {
+    background: transparent;
+    border: none;
+    font-size: 0.85rem;
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+.watchlist-btn:hover, .watchlist-btn:focus {
+    transform: scale(1.1);
+    text-shadow:
+            0 0 5px #00d4ff,
+            0 0 10px #00d4ff,
+            0 0 20px #0077ff;
+}
+
+/*Search form element styling*/
+.search-form {
+    display: flex;
+    justify-content: center;
+}
+.movie-search {
+    padding: 10px;
+    width: 342px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-family: 'Britney-Regular', sans-serif;
+    font-size: 1rem;
+}
+.search-btn {
+    padding: 10px;
+    width: 120px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    background-color: #F9FAFB;
+    cursor: pointer;
+}
+
+/*default main look*/
+.default-look {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #DFDDDD
+}
+.no-data-img {
+    width: 70px;
+    height: 70px;
+}
+.no-data-text {
+    font-family: 'Britney-Bold', sans-serif;
+    font-size: 1.125rem;
+}
